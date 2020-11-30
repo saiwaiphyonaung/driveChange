@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex_Pratical </title>
+
+	<style type="text/css">
+
+		*box-sizing:border-box;
+
+
+		.third{
+			width: 990px;
+			margin:100px auto;
+			display: flex;
+			justify-content: center;
+
+		}
+		.third-part{
+			width: 500px;
+			text-align: center;
+		}
+		.four{
+			height: 100vh;
+			display: flex;
+    		justify-content: center;
+   			 align-items: center;
+   			 background-color: #f5f7f1;
+		}
+		.four-img{
+			width: 450px;
+		}
+		.four-part{
+			width: 450px;
+			padding:0 50px;
+		}
+		.five{
+			flex-direction:row-reverse;
+			background-color:#ffffff;
+		}
+		.five-part{
+			text-align:right;
+		}
+		@media screen and (max-width: 480px){
+			.four,.five{
+				flex-direction: column;
+			}
+			section,div{
+				max-width: 100% !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="third">
+		<div class="third-part">
+			<h1>This is Third</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			
+		</p>
+		</div>
+	</section>
+	<section class="four">
+		<img src="jeong13.jpg" class="four-img">
+		<div class="four-part">
+			<h1>This is Jeong</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section class="four five">
+		<img src="jeong20.jpg" class="four-img">
+		<div class="four-part five-part">
+			<h1>This is Jeong</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+</body>
+</html>

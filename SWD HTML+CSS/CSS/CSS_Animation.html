@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS_Animation</title>
+		<style type="text/css">
+			
+			.one{
+				width: 100px;
+				height: 100px;
+				background-color: #1f1f1f;
+				animation: first 2s linear 0s 3 alternate ;
+
+			/*first mean:animation_name;
+			2s mean :animation duration;
+			linear mean : animation grid;
+			0s mean :animation delay;
+			3 mean : make 3 time;
+			alternate mean : that animation goes moveforward  and come back;
+*/
+	
+
+			}
+
+			@keyframes first{
+				0%{
+					transform:  translateX(0px);
+				}
+				100%{
+					transform:translateX(100px);
+
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			
+		</div>
+	</body>
+</html>

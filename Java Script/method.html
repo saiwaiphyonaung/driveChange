@@ -1,0 +1,19 @@
+<h5>Javascript Object,Property and Method</h5>
+<script type="text/javascript">
+    let myself = {
+
+       name:"Sai Wai Phyo Naung", //property
+       age :18,
+       skill : "Software Engineering", 
+
+       //method
+
+       showall : function(){ 
+        return `I'm ${this.name},I was born in ${this.getbdyear(this.age)},I work as ${this.skill} in Mandalay`;
+       },
+
+       getbdyear : function(age){
+        return 2020-age;
+       }
+    };
+</script>

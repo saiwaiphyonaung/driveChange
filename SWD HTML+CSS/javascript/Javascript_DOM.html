@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript DOM</title>
+	<style type="text/css">
+		img{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+<img src="../assets/jeong/jeong1.jpg" id="one">
+<img src="../assets/jeong/jeong10.png" class="two">
+<img src="../assets/jeong/jeong11.jpg" class="two">
+<script type="text/javascript">
+	document.querySelectorAll("img").forEach(function(el,index){
+		el.src = '../assets/jeong/jeong-${index+1}.jpg' ;
+	});
+</script>
+
+</body>
+</html>

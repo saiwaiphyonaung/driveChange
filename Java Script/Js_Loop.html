@@ -1,0 +1,50 @@
+<h1>Js Loop </h1>
+<p>Hello ၃ခါထုတ္မယ္</p>
+<p>Fruit List</p>
+<ol>
+	
+</ol>
+<script type="text/javascript">
+
+	 let arr =["apple","orange","mango"];
+
+	 // for( let i = 0; i<arr.length; i++){
+	 // 	document.querySelector("ol").innerHTML += `<li>${arr[i]}</li>`;
+	 // } 
+
+	 //x ဘယ္ကစ ဘယ္မွာဆံုးမယ္ဆိုတာ ေအာ္တိုသိတယ္(for x in arr)---- for(in LOOP)//
+	 // for( x in arr){
+	 // 	document.querySelector("ol").innerHTML += `<li>${arr[x]}</li>`;
+	 // }
+
+	 
+	 // x က arr အခန္းထဲေတြကို ကိုယ္စား
+	 // for (x of arr){
+	 // 		document.querySelector("ol").innerHTML += `<li>${x} for off </li>`;
+	 // }
+
+	 // el က အခန္းေတြကို ကိုယ္စား / index က အခန္းရဲ့ နံပါတ္ကို ကိုယ္စား
+	 // obj arr proto မွာဘဲအလုပ္လုပ္
+	 // arr.map(function (el,index){
+	 // 	document.querySelector("ol").innerHTML += `<li>${el} - ${index}</li>`
+	 // });
+
+	 let obj = {
+	 	name:"Sai Wai Phyo",
+	 	age:26,
+	 	job:"IT"
+	}
+
+	 for(x in obj){
+	 	document.querySelector("ol").innerHTML += `<li>  ${x} - ${obj[x]} </li>`;
+	 }
+		
+	// 	function showHello(max){
+
+	// 	for(i=1; i<=max; i++){
+	// 		console.log(`${i}Hello`);
+	// 	}
+	// }
+
+
+</script>

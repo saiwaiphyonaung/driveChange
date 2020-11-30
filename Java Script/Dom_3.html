@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomPart III</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            border:2px solid palegreen;
+            padding: 20px;
+            width: 260px;
+            text-align: center;
+            border-radius:5px ;
+            color: blueviolet;
+            font-family: sans-serif;
+            }
+        div{
+            margin-bottom:20px;
+        }
+        input{
+            width: 150px;
+            margin-right: 5px;
+            height: 30px;
+            border: 1px solid rgb(11, 17, 17);
+            border-radius: 5px;
+
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            color: brown;
+            background-color: aquamarine;
+
+        }
+        
+        
+       
+    </style>
+</head>
+<body>
+  
+      
+            <h1 id="result">Text</h1>
+            <div  class="but">
+                <input type="text" id="text" onchange="onchangetext()"><button id="settext">setText</button>
+            </div>
+            <div class="but">
+                <input type="color" id="color" onchange="changeColor()"><button id="setcolor">setColor</button>
+            </div>
+            <div class="but">
+                <input type="number" id="fontsize" onchange="onchangefontsize()">
+                <button id="setsize" onclick="changeFontSize()">setSize</button>
+           
+        </div>`
+   
+  </div>
+  <script>
+      let result = document.getElementById("result");
+      document.getElementById("settext").onclick = function(){
+          let x = document.querySelector("#text").value;
+            result.innerHTML = x;
+            console.log(`Change text to "${x}"`);
+      }
+      document.getElementById("setcolor").addEventListener("click",function(){
+        let x= document.getElementById("color").value;
+         result.style.color =x;
+         console.log(`Change color to "${x}"`);
+      })
+    
+      function changeFontSize(){
+        let x = document.getElementById("fontsize").value;
+       result.style.fontSize = x+"px";
+       console.log(`Change size to "${x}px"`);
+      }
+      
+      //onchange
+      
+      function changeColor(){
+         let x= document.getElementById("color").value;
+         result.style.color= x;
+         console.log("Changewithonchange");
+      }
+      
+      function onchangetext (){
+        let x =  document.getElementById("text").vlaue;
+        result.innerHTML= x;
+        alert("onchagetext");
+      }
+      
+      function onchangefontsize(){
+          let x =document.getElementById("size").value;
+          result.style.fontSize = x+"px";
+          alert("onchangefontsize");
+      }
+
+
+
+  </script>
+</body>
+</html>

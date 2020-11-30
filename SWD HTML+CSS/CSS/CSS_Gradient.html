@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS_Gradient</title>
+	<link rel="stylesheet" type="text/css" href="nav-bar.html">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+			font-family: 'Kumbh Sans', sans-serif;
+		}
+
+		.nav_container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			width: 100%;
+			height: 50px;
+		}
+		.nav-list ul li{
+			position: absolute;
+			text-decoration: none;
+			justify-content: space-between;
+			padding:25px 10px;
+			top: 25px;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+		
+		.home{
+			background-image: url(../assets/jeong/jeong9.jpg); 
+			height: 100vh;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			padding:150px;
+			color: white;
+			position: relative;
+			z-index: -2;
+
+
+		}
+		.home::before{
+			content: "";
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: #076585;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+			backdrop-filter:blur(50px);
+			top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    z-index: -1;
+		    opacity: 0.2;
+		}
+
+		.home-content{
+			width: 350px;
+			position: absolute;
+			right: 150px;
+		}
+		.home-content-title{
+
+		}
+		.home-content-para{
+
+		}
+		
+		.up{
+			width: 50px;
+			position: fixed;
+		    bottom: 50px;
+		    right: 50px;
+
+		}
+	</style>
+</head>
+<body>
+	<section class="nav_container">
+		<nav class="nav-list">
+			<ul>
+				<li> <a href="#">Home</a></li>
+				<li> <a href="#">Series</a></li>
+				<li> <a href="#">Blog</a></li>
+
+			</ul>
+		</nav>
+	</section>
+	
+	
+	<section class="home" id="home">
+		
+	
+		<div class="home-content">
+		<h1 class="home-content-title">Jeong</h1>
+		<p class="home-content-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section style="height: 100vh;">
+		
+	</section>
+	<section style="height: 100vh;">
+		
+	</section>
+	<a href="#home" class="up "> 
+		
+<svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<circle style="fill:#1138F7;" cx="256" cy="256" r="236.17"/>
+	<path style="fill:#1138F7;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256
+		C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341
+		S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/>
+</g>
+<path style="fill:#FFFFFF;" d="M369.227,311.126c-7.734,7.694-20.226,7.694-27.96,0l-85.069-85.069l-85.069,85.069
+	c-8.309,7.119-20.841,6.147-27.96-2.161c-6.365-7.416-6.365-18.382,0-25.798l99.148-99.148c7.734-7.694,20.226-7.694,27.96,0
+	l99.148,99.148C377.06,290.96,376.98,303.452,369.227,311.126z"/>
+<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+	
+	</a>
+</body>
+</html>

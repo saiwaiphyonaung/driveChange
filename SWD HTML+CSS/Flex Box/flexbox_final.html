@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .bg-gray{
+            background-color:cornsilk;
+
+        }
+
+        .bg-skyblye{
+
+            background-color: skyblue;
+
+        }
+
+        .bg-orange{
+
+            background-color: orangered;
+        }
+
+        .one{
+
+            height: 50vh;
+            background-color: #f5f5f5;
+            display: flex;
+        }
+        .part{
+
+            flex-grow: 1;
+        }
+        
+        .part.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -400px;
+        }
+
+        .two{
+            width:990px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: -100px;
+            box-shadow: ;
+        }
+        .two-part{
+            text-align: center;
+            width: 300px;
+            padding: 30px 15px;
+            background-color: #ffffffee;
+        }
+
+        .third{
+            width: 990px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+}
+
+        
+
+        .third-part{
+            
+            width:500px;
+            text-align: center;
+        }
+
+        .four{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+
+        }
+
+        .four-img{
+
+            width: 300px;
+
+        }
+
+        .four-part{
+
+            width: 450px;
+            padding: 0 50px;
+            font-family: sans-serif;
+        }
+        .five{
+
+            background-color: #ffffff;
+            flex-direction: row-reverse;
+        }
+
+        .five-part{
+
+            text-align: right;
+        }
+        @media screen and (max-width: 480px) {
+
+            .one,.two,.third,.four,.five{
+                flex-direction: column;
+
+            }
+
+            .two{
+                align-items: center;
+            }
+           
+            section,div{
+
+            max-width: 100% !important;
+           }
+          
+            
+            
+        }
+
+        .cover{
+            width: 450px;
+        }
+
+        .left-title{
+            color:orangered;
+        
+            padding: 0px 0px;
+            margin-top: 190px;
+            margin-left: 150px;
+            font-size: 45px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="one">
+        <div class="part left bg-gray" >
+            
+            <h1 class="left-title">Ticket Available Here!</h1>
+        </div>
+        <div class="part right bg-skyblye" >
+            <div class="left-inner" style="width:300px;">
+                <img class="cover" src="cover.jpg" alt="">
+        <h1>ပိတောက်ကတဲ့ဂီတ</h1>
+            <p>
+               ပိတောက်ကတဲ့ဂီတကို မင်းသမီး ပိုးမမှီသာ ၀တ်မှုံရွှေရည် မင်းသား စိုင်းစိုင်းခမ်းလှိုင် ဦးကျော်သူတို့မှ အဓိကပါ၀င်သရုပ် ေဆာင်ထားပါသည်။
+            </p>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <section class="two">
+        <div class="two-part">
+            <h1>This is one</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, in vitae provident unde ad quae nulla, facilis, iusto pariatur iure quisquam corrupti magni itaque ab nesciunt. Id quo impedit aut.
+            </p>
+        </div>
+        <div class="two-part">
+            <h1>This is two</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum itaque aut, voluptate quisquam iure consectetur, quaerat consequatur possimus ipsa voluptatibus, natus rem maiores? Officia temporibus recusandae veritatis voluptatem, id ab.</p>
+        </div>
+        <div class="two-part">
+            <h1>This is three</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi ut autem corrupti fugiat. Hic natus temporibus ipsam cupiditate adipisci dolores magni minima nulla enim praesentium, doloribus ipsum modi maxime?</p>
+        </div>
+    </section>  
+
+    <section class="third">
+        <div class="third-part">
+            <h1>This is third part</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et similique tempore odit, totam fugiat necessitatibus deleniti omnis fugit perferendis aut eligendi magni non sunt velit, ducimus temporibus dolorum voluptas!
+                
+        </div>
+    </section>
+    <section class="four">
+
+        <img src="poem.jpg" class="four-img"    alt="">
+        <div class="four-part">
+            <h1>Poe Ma Mhe Thar(Actress)</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet libero reiciendis mollitia ratione saepe eius quam consequatur magnam, autem ipsa voluptatum tenetur eaque fugiat repudiandae dolore excepturi temporibus reprehenderit impedit.
+            </p>
+        </div>
+
+    </section>
+    <section class=" four five">
+
+        <img src="saisai.jpg" class="four-img"    alt="">
+        <div class="four-part five-part">
+            <h1>Sai Sai Kham Lang(Actor)</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet libero reiciendis mollitia ratione saepe eius quam consequatur magnam, autem ipsa voluptatum tenetur eaque fugiat repudiandae dolore excepturi temporibus reprehenderit impedit.
+            </p>
+        </div>
+
+    </section>
+</body>
+</html>
